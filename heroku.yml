@@ -1,0 +1,9 @@
+build:
+  docker:
+    grails: ./grails-java7/Dockerfile
+run:
+  grails: sh /root/openboxes-run.sh
+  worker:
+    command:
+      - bundle exec rake jobs:work
+    image: web
