@@ -7,6 +7,7 @@ MAINTAINER Michael Seaton <mseaton@pih.org>
 ENV SDKMAN_DIR /root/.sdkman
 ENV GRAILS_VERSION 1.3.9
 
+# https://github.com/nodesource/distributions/issues/1181#issuecomment-804671853
 RUN curl -fsSL https://deb.nodesource.com/gpgkey/nodesource.gpg.key | apt-key add -
 
 # Install Base Packages required and Node
