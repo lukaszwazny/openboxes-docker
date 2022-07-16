@@ -7,6 +7,8 @@ MAINTAINER Michael Seaton <mseaton@pih.org>
 ENV SDKMAN_DIR /root/.sdkman
 ENV GRAILS_VERSION 1.3.9
 
+RUN curl -fsSL https://deb.nodesource.com/gpgkey/nodesource.gpg.key | apt-key add -
+
 # Install Base Packages required and Node
 
 RUN apt-get update && apt-get install -y curl zip python g++ make gcc build-essential \
